@@ -58,6 +58,7 @@
     {{ $jsSearch := resources.Get "js/search.js" }}
     {{ $assets.Add "js" (slice $jsFuse $jsSearch) }}
   {{ end }}
+  <div id="search"></div>
   {{ if .Site.Params.enableCodeCopy | default false }}
     {{ $jsCode := resources.Get "js/code.js" }}
     {{ $assets.Add "js" (slice $jsCode) }}
